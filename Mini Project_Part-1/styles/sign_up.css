@@ -1,6 +1,20 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .container {
@@ -10,11 +24,6 @@ body {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 form {
@@ -27,7 +36,7 @@ label {
     margin-bottom: 10px;
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="password"], textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -47,16 +56,76 @@ input[type="submit"]:hover {
     background-color: #3e8e41;
 }
 
-p {
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Specific Styles for Each Page */
+
+.sign-up-page {
+    background-image: url('sign-up-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-page {
+    background-color: #f7f7f7;
+}
+
+.forgot-password-page {
+    background-color: #fff;
+}
+
+.registration-page {
+    background-image: url('registration-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.upload-documents-page {
+    background-color: #f7f7f7;
+}
+
+.edit-profile-page {
+    background-color: #fff;
+}
+
+/* Navigation Bar Styles */
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
     text-align: center;
-    margin-top: 20px;
 }
 
-a {
+.navbar a {
+    color: #fff;
     text-decoration: none;
-    color: #337ab7;
+    margin: 0 20px;
 }
 
-a:hover {
-    color: #23527c;
+.navbar a:hover {
+    color: #ccc;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
 }
